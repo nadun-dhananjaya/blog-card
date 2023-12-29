@@ -3,9 +3,9 @@ import AuthorIcon from "./../../assets/images/image-avatar.webp";
 
 const BlogCard = () => {
   return (
-    <div className="grid place-items-center min-h-screen p-6">
+    <div className="grid min-h-screen p-6 place-items-center">
       <div className="bg-white max-w-[384px] p-6 rounded-[20px] flex gap-6 flex-col drop-shadow-[8px_8px_0_rgba(0,0,0,1)]">
-        <img src={BlogImage} className="rounded-[10px]" />
+        <img src={BlogImage} className="rounded-[10px]" alt="blog image" />
         <div className="flex flex-col gap-3">
           <div>
             <span className="text-[14px] inline-block rounded bg-yellow px-3 py-1 font-bold  leading-5">
@@ -29,8 +29,12 @@ const BlogCard = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row gap-3 items-center">
-          <img src={AuthorIcon} className="h-8 object-cover" />
+        <div className="flex flex-row items-center gap-3">
+          <img
+            src={AuthorIcon}
+            className="object-cover h-8"
+            alt="blog author icon"
+          />
           <span className="text-[14px] font-bold leading-[150%]">
             Greg Hooper
           </span>
