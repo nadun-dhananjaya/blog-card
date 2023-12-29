@@ -3,7 +3,11 @@ import "./App.css";
 import BlogCard from "./components/BlogCard/BlogCard";
 
 function App() {
-  return <BlogCard />;
+  return (
+    <main>
+      <BlogCard />
+    </main>
+  );
 }
 
 export default App;
